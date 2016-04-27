@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ChangePwd_Activity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="Enter new \n password:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt"
+        android:layout_marginLeft="80dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/Okbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt"
+        android:layout_margin="50dp"
+        android:onClick="okClick"
+        android:text="OK"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/Canbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/Okbtn"
+        android:onClick="canClick"
+        android:text="Cancel"
+        android:textSize="30dp" />
+</RelativeLayout>
